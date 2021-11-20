@@ -1,0 +1,148 @@
+/* Reset ---------------------------------------------------------*/
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+/* Reset ---------------------------------------------------------*/
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#containerHeader {
+  width: 100%;
+  height: 500px;
+  background: url(../img/background_02_1.jpg) center center no-repeat fixed;
+  background-size: cover;
+}
+
+#containerHeader, .rowFlex a, .rowGrid button {
+  color: white;
+}
+
+.backgroundFilter {
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+header, h1 {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  width: 100%;
+  height: 75px;
+  padding: 0 5%;
+  /* Background alternativo para header. */
+  /*background-color: rgb(250,250,250, 0.4);*/
+}
+
+.rowFlex, .rowGrid {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.rowFlex, .rowFlex nav, .rowFlex ul, #imageLogo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowFlex ul {
+  gap: 2rem;
+}
+
+#imageLogo {
+  margin-right: auto;
+}
+
+#imageLogo p{
+  margin-left: 15px;
+  font-size: 1.5rem;
+}
+
+#rowGrid01 {
+  height: calc(100% - 75px);
+}
+
+#rowGrid01 h1, #rowGrid01 p, #rowGrid01 button {
+  margin-bottom: 3rem;
+}
+
+#rowGrid01 button {
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 5px;
+  
+  width: 175px;
+  height: 35px;
+  background-color: rgb(255, 255, 255, 0.3);
+}
+
+.rowGrid {
+  height: 100%;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Main ---------------------------------------------------------*/
+main {
+  padding: 5rem 0;
+}
+
+.rowSession {
+  height: 350px;
+}
+
+.rowSession div {
+  height: 100%;
+}
+
+.rowSession h2 {
+  margin-bottom: 2rem;
+  text-align: justify;
+  color: #555555;
+}
+
+.rowSession p {
+  margin: 2rem 2rem 0 0;
+  text-align: justify;
+  color: #555555;
+}
+
+.rowSessionRight h2 {
+  text-align: right;
+}
+
+.rowSessionRight p {
+  margin: 2rem 0 2rem 2rem;
+  text-align: justify;
+  color: #555555;
+}
+/* Main ---------------------------------------------------------*/
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
