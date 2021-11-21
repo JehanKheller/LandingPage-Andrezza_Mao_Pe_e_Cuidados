@@ -97,7 +97,8 @@ header {
 
 /* Main ---------------------------------------------------------*/
 main {
-  padding: 5rem 0;
+  width: 100%;
+  padding: 5rem 5%
 }
 
 .rowSession {
