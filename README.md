@@ -1,5 +1,8 @@
 # HairSync
 
+## 🌐 Webpage
+To check the webpage, [click here!](https://jehankheller.github.io/HairSync/) 👈
+
 ## 🤝 Contributors
 These are the project collaborators:
 
