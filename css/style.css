@@ -31,7 +31,7 @@ html, body {
   -webkit-backdrop-filter: blur(10px);
 }
 
-header, h1 {
+header, h1, footer {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -44,29 +44,43 @@ header {
   /*background-color: rgb(250,250,250, 0.4);*/
 }
 
+header a p{
+  margin-left: 15px;
+  font-size: 1.5rem;
+}
+
+header p span {
+  font-size: 0.9rem;
+}
+
 .rowFlex, .rowGrid {
   max-width: 1040px;
   margin: 0 auto;
 }
 
-.rowFlex, .rowFlex nav, .rowFlex ul, #imageLogo {
+.rowFlex, ul, a, .imageLogo {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.rowFlex ul {
-  gap: 2rem;
-}
-
-#imageLogo {
+.imageLogo {
   margin-right: auto;
 }
 
-#imageLogo p{
-  margin-left: 15px;
-  font-size: 1.5rem;
+#navHeader {
+  padding-right: 10px;
+  gap: 2rem;
+}
+
+#navHeader li a{
+  width: calc(100% + 22px);
+  height: 40px;
+}
+
+#navHeader li a:hover {  
+  background-color: rgb(255, 255, 255, 0.3);
 }
 
 #rowGrid01 {
@@ -80,11 +94,16 @@ header {
 #rowGrid01 button {
   margin: 0 auto;
   border: 2px solid white;
-  border-radius: 5px;
-  
   width: 175px;
   height: 35px;
-  background-color: rgb(255, 255, 255, 0.3);
+  background-color: rgb(60, 60, 60, 0.3);
+  cursor: pointer;
+}
+
+#rowGrid01 button:hover {
+  color: rgb(240, 101, 250);
+  border: 0;
+  background-color: rgb(255, 255, 255, 0.4);
 }
 
 .rowGrid {
@@ -147,3 +166,31 @@ ul {
 a {
   text-decoration: none;
 }
+
+/* Footer ---------------------------------------------------------*/
+footer {
+  width: 100%;
+  padding: 2rem 5%;
+  background-color: #fbeffc;
+}
+
+footer a p {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #f065fa;
+}
+
+#footerSocial {
+  gap: 0.5rem;
+}
+
+#footerSocial li a{
+  width: 40px;
+  height: 40px;
+}
+
+#footerSocial li a:hover {
+  border-radius: 50%;
+  background-color: rgb(240, 101, 250, 0.3);
+}
+/* Footer ---------------------------------------------------------*/
