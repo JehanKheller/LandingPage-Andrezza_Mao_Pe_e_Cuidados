@@ -8,6 +8,7 @@ These are the project collaborators:
 
 - [Jehan Kheller](https://github.com/JehanKheller)
 - [Lucas Beserra](https://github.com/Lucas-beserra)
+- [João Victor](https://github.com/Joao1V)
 
 ## ⚠️ License
 This project has an MIT License.
