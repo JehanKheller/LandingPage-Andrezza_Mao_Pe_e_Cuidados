@@ -182,8 +182,6 @@ footer {
   width: 100%;
   padding: 2rem 5%;
   background-color: #fbeffc;
-  bottom: 40px;
-  position: absolute;
 }
 
 footer a p {
@@ -215,8 +213,6 @@ footer a p {
   width: 100%;
   height: 40px;
   padding: 0 5%;
-  bottom: 0;
-  position: absolute;
 }
 
 #containerCopyright p {
