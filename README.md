@@ -3,6 +3,12 @@
 ## 🌐 Webpage
 To check the webpage, [click here!](https://jehankheller.github.io/HairSync/) 👈
 
+## 📝 Technologies
+The technologies used for this project are:
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
 ## 🤝 Contributors
 These are the project collaborators:
 
