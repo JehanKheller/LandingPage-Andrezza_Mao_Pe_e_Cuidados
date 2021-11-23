@@ -94,16 +94,18 @@ header p span {
 #rowGrid01 button {
   margin: 0 auto;
   border: 2px solid white;
+  border-radius: 5px;
   width: 175px;
   height: 35px;
-  background-color: rgb(60, 60, 60, 0.3);
+  background-color: rgb(63, 61, 85, 0.5);
   cursor: pointer;
 }
 
 #rowGrid01 button:hover {
-  color: rgb(240, 101, 250);
-  border: 0;
-  background-color: rgb(255, 255, 255, 0.4);
+  border-radius: 5px;
+  border: 2px solid #f065fa;
+  background-color: #f065fa;
+  box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .rowGrid {
@@ -131,21 +133,29 @@ main {
 .rowSession h2 {
   margin-bottom: 2rem;
   text-align: justify;
-  color: #555555;
+  color: #3f3d55;
+}
+
+.rowSession h2:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #f065fa;
+  margin: 0;
+}
+
+.rowSession h2:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #f065fa;
+  margin: 0 0 0 50px;
 }
 
 .rowSession p {
   margin: 2rem 2rem 0 0;
-  text-align: justify;
-  color: #555555;
-}
-
-.rowSessionRight h2 {
-  text-align: right;
-}
-
-.rowSessionRight p {
-  margin: 2rem 0 2rem 2rem;
   text-align: justify;
   color: #555555;
 }
@@ -194,3 +204,18 @@ footer a p {
   background-color: rgb(240, 101, 250, 0.3);
 }
 /* Footer ---------------------------------------------------------*/
+
+/* Footer - Copyright ---------------------------------------------*/
+#containerCopyright {
+  font-size: 0.9rem;
+  background-color: #3f3d55;
+  color: #f065fa;
+  width: 100%;
+  height: 40px;
+  padding: 0 5%;
+}
+
+#containerCopyright p {
+  margin-right: auto;
+}
+/* Footer - Copyright ---------------------------------------------*/
