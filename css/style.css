@@ -86,10 +86,45 @@ a,
 #navHeader li a {
   width: calc(100% + 22px);
   height: 40px;
+  transition: 0.3s;
 }
 
 #navHeader li a:hover {
-  background-color: rgb(255, 255, 255, 0.3);
+  font-size: 1.3rem;
+  transition: 0.5s;
+  color: white;
+  opacity: 0.7;
+}
+
+.hover-border {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.hover-border::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: rgb(225, 225, 233);
+  background: linear-gradient(
+    90deg,
+    rgba(225, 225, 233, 1) 13%,
+    rgba(230, 232, 231, 1) 51%,
+    rgba(151, 151, 151, 1) 78%,
+    rgba(145, 145, 145, 1) 100%
+  );
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  border-radius: 10px;
+  transition: all 500ms ease;
+}
+
+.hover-border:hover::after {
+  left: 0%;
+  width: 100%;
 }
 
 #rowGrid01 {
