@@ -170,27 +170,38 @@ main {
 }
 
 .gallery {
-  display: grid;
-  outline: 3px solid black;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  outline: 1px solid black;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+  margin: 2rem 15%;
 }
 
-.gallery ul li img{
-  width: 100%;
-  height: 50%;
-  margin: auto;
+.gallery ul {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  width: 1200px;
+  height: 400px;
+}
+
+.gallery ul li img {
+  height: 400px;
+  width: 300px;
 }
 
 .m-top {
   margin-top: 200px;
 }
+
 .rowSession {
   height: 350px;
 }
 
-.rowSession div {
-  height: 100%;
-}
+/* .rowSession div {
+ height: 100%;
+} */
 
 .rowSession h2 {
   margin-bottom: 2rem;
