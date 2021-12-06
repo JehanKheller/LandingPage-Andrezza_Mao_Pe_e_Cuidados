@@ -170,15 +170,45 @@ main {
 }
 
 .gallery {
-  width: 300px;
-  height: 400px;
+  overflow: hidden
+}
+
+.gallery .photos {
+width: 500%;
+animation-name: animacao;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+}
+
+.gallery .photos img {
+  width: 5%;
+  
+}
+
+@keyframes animacao {
+  0% { margin-left: 0;}
+  20% {margin-left: 0; }
+  25% { margin-left: -100%;}
+  45% { margin-left: -100%;}
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  75% { margin-left: -300%}
+  95% {margin-left: -300%;}
+  100% {margin-left: -400%;}
+
+
+}
+
+/* .gallery {
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   outline: 1px solid black;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
   margin: 2rem 15%;
-}
+} */
 
-.gallery ul {
+/* .gallery ul {
   display: flex;
   justify-content: start;
   list-style: none;
@@ -189,7 +219,7 @@ main {
 .gallery ul li img {
   height: 400px;
   width: 300px;
-}
+} */
 
 .m-top {
   margin-top: 200px;
