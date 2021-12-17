@@ -8,6 +8,7 @@ The technologies used for this project are:
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## 🤝 Contributors
 These are the project collaborators:
