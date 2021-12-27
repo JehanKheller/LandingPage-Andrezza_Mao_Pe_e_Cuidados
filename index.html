@@ -42,6 +42,9 @@
         <nav>
           <ul id="navHeader">
             <li>
+              <a href="#about" class="hover-border">Sobre nós</a>
+            </li>
+            <li>
               <a href="pages/shedule.html" class="hover-border">Agenda</a>
             </li>
             <li>
@@ -49,9 +52,6 @@
             </li>
             <li>
               <a href="#gallery" class="hover-border">Galeria</a>
-            </li>
-            <li>
-              <a href="#sobre" class="hover-border">Sobre nós</a>
             </li>
             <li>
               <a href="#contact" class="hover-border">Contato</a>
@@ -62,9 +62,63 @@
     </header>
 
     <main>
+      <section id="about">
+        <div id="aboutContainer">
+          <h4>Esmalteria</h4>
+          <h2 class="h2Style">Andrezza - Mão Pé &amp; Cuidados</h2>
+          <div id="aboutContent">
+            <div>
+              <p><strong>União de sofisticação e modernidade, com o talento dos melhores e experientes profissionais do setor.</strong></p><br><br>
+              <p>Um salão minuciosamente planejado e concebido para oferecer todos os serviços voltados à beleza e estética, feminina e masculina. Salas estruturadas para noivas, estética especializada, espaços próprios para esmalteria, barbearia, maquiagem, podologia, massagem, depilação e Hair Stylists.</p><br><br>
+              <p>Dispomos de um ambiente onde todos podem usufruir de lanches ou refeições saudáveis, carinhosamente preparadas para tornar sua permanência mais agradável. Além de um amplo espaço para eventos, cursos e reuniões empresariais.</p>
+            </div>
+            <div>
+              <img src="img/salon.jpg" alt="Salão" width="300px" height="300px">
+            </div>        
+          </div>  
+        </div>
+      </section>
+
+      <section id="diferenciais" class="">
+        <div id="diferenciaisContainer">
+          <h4>Confira nossos</h4>
+          <h2 class="h2Style">Diferenciais</h2>
+          <div id="diferenciaisContent">
+            <ul>
+              <li>
+                <img src="img/atendimento.svg" alt="Ícone Atendimento">
+                <p>Atendimento de Qualidade</p>
+              </li>
+              <li>
+                <img src="img/profissional.svg" alt="Ícone Profissionais">
+                <p>Profissionais Especializados</p>
+              </li>
+              <li>
+                <img src="img/experiencia.svg" alt="Ícone Experiência">
+                <p>Experiência de Mercado</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src="img/tratamento.svg" alt="Ícone Tratamentos">
+                <p>Tratamentos Completos</p>
+              </li>
+              <li>
+                <img src="img/ambiente.svg" alt="Ícone Ambiente">
+                <p>Ambiente Agradável</p>
+              </li>
+              <li>
+                <img src="img/produto.svg" alt="Ícone Produto">
+                <p>Produtos de Qualidade</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
       <section id="agenda" class="rowFlex rowSession">
         <div>
-          <h2>Agenda</h2>
+          <h2 class="h2Style">Agenda</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse exercitationem asperiores officiis reiciendis obcaecati amet similique possimus nesciunt vel, deserunt consequuntur tenetur veritatis placeat provident sunt nobis iure, ut soluta?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero omnis repellat aliquam eum, ullam molestias itaque magnam. Voluptates, voluptatem vel. Incidunt et nobis quibusdam quaerat molestiae suscipit inventore sapiente.</p>
         </div>        
@@ -73,7 +127,8 @@
 
       <section id="servicos" class="rowFlex rowSession">
         <div>
-          <h2>Serviços</h2>
+          <h4>Conheça nossos</h4>
+          <h2 class="h2Style">Serviços</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse exercitationem asperiores officiis reiciendis obcaecati amet similique possimus nesciunt vel, deserunt consequuntur tenetur veritatis placeat provident sunt nobis iure, ut soluta?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero omnis repellat aliquam eum, ullam molestias itaque magnam. Voluptates, voluptatem vel. Incidunt et nobis quibusdam quaerat molestiae suscipit inventore sapiente.</p>
         </div>
@@ -82,6 +137,7 @@
 
       <section id="gallery">
         <div id="galleryContainer">
+          <h4>Confira nossa</h4>
           <h2 class="h2Style">Galeria</h2>
           <div id="galleryPhotos">
             <img src="./img/gallery/1.jpeg" alt="Foto 1">
@@ -102,15 +158,6 @@
             <img src="./img/gallery/16.jpeg" alt="Foto 16">
           </div>
         </div>
-      </section>
-
-      <section id="sobre" class="rowFlex rowSession">
-        <div>
-          <h2>Sobre nós</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse exercitationem asperiores officiis reiciendis obcaecati amet similique possimus nesciunt vel, deserunt consequuntur tenetur veritatis placeat provident sunt nobis iure, ut soluta? lo</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero omnis repellat aliquam eum, ullam molestias itaque magnam. Voluptates, voluptatem vel. Incidunt et nobis quibusdam quaerat molestiae suscipit inventore sapiente.</p>
-        </div>        
-        <img src="img/about.svg" alt="Sobre nós" width="250px">
       </section>
 
       <section id="contact">
@@ -143,6 +190,7 @@
               <input type="phone" name="telefone" id="telefone" placeholder="Telefone" required>
               <textarea name="mensagem" id="mensagem" placeholder="Deixe sua mensagem bem aqui." required></textarea>
               <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/Landing%20Page%20Andrezza/pages/mesage.html">
               <button type="submit"><strong>Enviar</strong></button>
               <br>
             </form>
