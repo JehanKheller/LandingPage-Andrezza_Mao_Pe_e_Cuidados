@@ -20,7 +20,7 @@ body {
 #containerHeader {
   width: 100%;
   height: 500px;
-  background: url(../img/background_02_1.jpg) center center no-repeat fixed;
+  background: url(../img/background.jpg) center center no-repeat fixed;
   background-size: cover;
 }
 
@@ -179,24 +179,6 @@ main {
   color: #3f3d55;
 }
 
-.h2Style:before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background-color: #f065fa;
-  margin: 0;
-}
-
-.h2Style:after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 3px;
-  background-color: #f065fa;
-  margin: 0 0 0 50px;
-}
-
 /* Main > Session About -----------------------------------------*/
 #about {
   height: 500px;
@@ -250,10 +232,6 @@ main {
   padding: 2rem 0;
 }
 
-#diferenciaisContainer h4 {
-  color: #f065fa;
-}
-
 #diferenciaisContent ul {
   width: 100%;
   height: 100%;
@@ -286,9 +264,102 @@ main {
 }
 /* Main > Session Diferenciais ----------------------------------*/
 
+/* Main > Session Services --------------------------------------*/
+#services {
+  color: white;
+  background-color: #fbeffc;
+  height: 1600px;
+  padding: 0 5%;
+}
+
+#services h2 {
+  color: #3f3d55;
+  margin: 0 0 1.5rem 0;
+}
+
+#services h3 {
+  font-size: 1.5rem;
+}
+
+#servicesContainer {
+  max-width: 1040px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+#servicesContent ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#servicesContent ul li {
+  width: 33%;
+  height: 450px;
+  margin-top: 1.5rem;
+  border: 2px solid #f065fa;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  transition: border 0.2s;
+}
+
+#servicesContent ul li div {
+  background-color: rgb(63, 61, 85, 0.5);
+  width: 100%;
+  padding: 1rem;
+}
+
+#servicesContent ul li a {
+  color: white;
+  font-size: 1rem;
+  background-color: #f065fa;
+  width: 100%;
+  height: 45px;
+  border: 1px solid transparent;
+  border-radius: 0 0 5px 5px;
+  transition: border, box-shadow 0.4s ease;
+}
+
+#servicesContent ul li a:hover {
+  border: 1px solid #f065fa;
+  box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+
+#service_01 {
+  background: url(../img/service_01.jpg) no-repeat;
+}
+#service_02 {
+  background: url(../img/service_02.jpg) no-repeat;
+}
+#service_03 {
+  background: url(../img/service_03.jpg) no-repeat;
+}
+#service_04 {
+  background: url(../img/service_04.jpg) no-repeat;
+}
+#service_05 {
+  background: url(../img/service_05.jpg) no-repeat;
+}
+#service_06 {
+  background: url(../img/service_06.jpg) no-repeat;
+}
+
+#service_07 {
+  background: url(../img/service_07.jpg) no-repeat;
+}
+/* Main > Session Services --------------------------------------*/
+
 /* Main > Session Gallery ---------------------------------------*/
 #gallery {
-  background-color: #fbeffc;
+  background-color: white;
   height: 520px;
   padding: 0 5%;
 }
@@ -438,7 +509,7 @@ h2 {
 }
 
 h4 {
-  color: #3f3d55;
+  color: #f065fa;
   margin-bottom: 0.5rem;
 }
 
