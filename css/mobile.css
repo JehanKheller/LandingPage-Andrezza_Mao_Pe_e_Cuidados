@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #navHeader {
     display: block;
     visibility: hidden;
@@ -128,7 +128,7 @@
   }
 }
 
-@media screen and (max-width: 393px) {
+@media only screen and (max-width: 393px) {
   #about {
     height: 800px;
   }
