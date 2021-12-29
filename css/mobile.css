@@ -65,8 +65,8 @@
   .menu button {
     display: block;
     position: fixed;
-    top: 2.5rem;
-    right: 4rem;
+    top: 3rem;
+    right: 5rem;
   }
 
   .menu button span {
@@ -93,6 +93,7 @@
     position: fixed;
     top: 5rem;
     right: 2.2rem;
+    transition: 0.3s;
   }
 
   .active button span {
@@ -112,5 +113,28 @@
   .shedule-image,
   .services-image {
     display: none;
+  }
+
+  #diferenciais,
+  #services,
+  #contact {
+    height: 100%;
+  }
+
+  #diferenciaisContent ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  #diferenciaisContent ul li,
+  #servicesContent ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  #servicesContent ul {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
