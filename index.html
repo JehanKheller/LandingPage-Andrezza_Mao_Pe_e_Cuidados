@@ -35,6 +35,7 @@
     <div id="containerHeader">
       <div class="backgroundFilter">
         <div id="rowGrid01" class="rowGrid">
+          <h1>Headline</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In fuga a
             quisquam quod dicta veniam?
@@ -52,11 +53,14 @@
             <strong>Andrezza</strong><br /><span>Mão Pé &amp; Cuidados</span>
           </p>
         </a>
-        <nav class="menu">
-          <button class="button-menu">
-            <span></span>
+        <nav id="nav">
+          <button id="btnMenuMobile">
+            <span id="hamburgerIcon"></span>
           </button>
           <ul id="navHeader">
+            <li>
+              <a href="#about" class="hover-border">Sobre nós</a>
+            </li>
             <li>
               <a href="pages/shedule.html" class="hover-border">Agenda</a>
             </li>
@@ -100,7 +104,6 @@
               <img
                 src="img/salon.jpg"
                 alt="Salão"
-                class="about-image"
                 width="300px"
                 height="300px"
               />
@@ -144,9 +147,8 @@
         </div>
       </section>
 
-      <!-- <section id="agenda" class="rowFlex rowSession">
+      <!--<section id="agenda" class="rowFlex rowSession">
         <div>
-          <h2 class="h2Style">Agenda</h2>
           <h2>Agenda</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
@@ -162,12 +164,12 @@
           </p>
         </div>
         <img src="img/shedule.svg" alt="Agenda" width="250px" />
-      </section> -->
+      </section>-->
 
       <section id="services">
         <div id="servicesContainer">
           <h4>Conheça nossos</h4>
-          <h2 class="h2Style">Serviços</h2>
+          <h2>Serviços</h2>
           <div id="servicesContent">
             <ul>
               <li id="service_01">
@@ -175,84 +177,56 @@
                   <h3>Plástica dos Pés</h3>
                   <p><strong>R$ 50,00</strong></p>
                 </div>
-                <a
-                  href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*Pl%C3%A1stica%20dos%20P%C3%A9s*."
-                  target="_blank"
-                  ><strong>Agendar</strong></a
-                >
+                <a href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*Pl%C3%A1stica%20dos%20P%C3%A9s*." target="_blank"><strong>Agendar</strong></a>
               </li>
               <li id="service_02">
                 <div>
                   <h3>Fibra de Vidro</h3>
                   <p><strong>R$ 100,00</strong></p>
                 </div>
-                <a
-                  href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*Fibra%20de%20Vidro*."
-                  target="_blank"
-                  ><strong>Agendar</strong></a
-                >
+                <a href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*Fibra%20de%20Vidro*." target="_blank"><strong>Agendar</strong></a>
               </li>
               <li id="service_03">
                 <div>
                   <h3>Gel na Tips</h3>
                   <p><strong>R$ 70,00</strong></p>
                 </div>
-                <a
-                  href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*Gel%20na%20Tips*."
-                  target="_blank"
-                  ><strong>Agendar</strong></a
-                >
+                <a href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*Gel%20na%20Tips*." target="_blank"><strong>Agendar</strong></a>
               </li>
               <li id="service_04">
                 <div>
                   <h3>Pé e Mão + Postiça</h3>
                   <p><strong>R$ 40,00</strong></p>
                 </div>
-                <a
-                  href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*P%C3%A9%20e%20M%C3%A3o%20%2B%20Posti%C3%A7a*."
-                  target="_blank"
-                  ><strong>Agendar</strong></a
-                >
+                <a href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*P%C3%A9%20e%20M%C3%A3o%20%2B%20Posti%C3%A7a*." target="_blank"><strong>Agendar</strong></a>
               </li>
               <li id="service_05">
                 <div>
                   <h3>Mão + Postiça</h3>
                   <p><strong>R$ 30,00</strong></p>
                 </div>
-                <a
-                  href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*M%C3%A3o%20%2B%20Posti%C3%A7a*."
-                  target="_blank"
-                  ><strong>Agendar</strong></a
-                >
+                <a href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*M%C3%A3o%20%2B%20Posti%C3%A7a*." target="_blank"><strong>Agendar</strong></a>
               </li>
               <li id="service_06">
                 <div>
                   <h3>Pé e Mão Simples</h3>
                   <p><strong>R$ 25,00</strong></p>
                 </div>
-                <a
-                  href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*P%C3%A9%20e%20M%C3%A3o%20Simples*."
-                  target="_blank"
-                  ><strong>Agendar</strong></a
-                >
+                <a href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*P%C3%A9%20e%20M%C3%A3o%20Simples*." target="_blank"><strong>Agendar</strong></a>
               </li>
               <li id="service_07">
                 <div>
                   <h3>Spá dos Pés</h3>
                   <p><strong>R$ 15,00</strong></p>
                 </div>
-                <a
-                  href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*Sp%C3%A1%20dos%20P%C3%A9s*."
-                  target="_blank"
-                  ><strong>Agendar</strong></a
-                >
+                <a href="https://api.whatsapp.com/send?phone=5584998552403&text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20https%3A%2F%2Fwww.meusite.com.br%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20*Sp%C3%A1%20dos%20P%C3%A9s*." target="_blank"><strong>Agendar</strong></a>
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- <section id="gallery">
+      <!--<section id="gallery">
         <div id="galleryContainer">
           <h4>Confira nossa</h4>
           <h2>Galeria</h2>
@@ -275,7 +249,7 @@
             <img src="./img/gallery/16.jpeg" alt="Foto 16" />
           </div>
         </div>
-      </section> -->
+      </section>-->
 
       <section id="contact">
         <div id="contactContainer">
