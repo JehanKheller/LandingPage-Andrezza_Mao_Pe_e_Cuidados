@@ -128,11 +128,13 @@
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media screen and (max-width: 393px) {
   #about {
     height: 800px;
   }
+}
 
+@media only screen and (max-width: 375px) {
   #contact {
     height: 835px;
   }
