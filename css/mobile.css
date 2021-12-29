@@ -1,0 +1,116 @@
+@media screen and (max-width: 450px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    height: 15vh;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  header.active-header {
+    height: 19.5vh;
+  }
+
+  header.active-header .imageLogo {
+    top: -21.5rem;
+    left: 0;
+    position: fixed;
+  }
+
+  header.headerTranslucentColor .imageLogo,
+  header.headerSolidColor .imageLogo {
+    top: -21.5rem;
+    left: 0;
+    position: fixed;
+  }
+
+  header.headerTranslucentColor .hover-border,
+  header.headerSolidColor .hover-border {
+    margin-bottom: -1rem;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  /* header.headerSolidColor .imageLogo {
+    margin-top: 6rem;
+  } */
+
+  .imageLogo {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .rowFlex {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .menu ul {
+    visibility: hidden;
+    display: flex;
+    padding: 0;
+    height: 50px;
+    position: absolute;
+  }
+
+  .hover-border {
+    margin: 0 -10px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .menu button {
+    display: block;
+    position: fixed;
+    top: 2.5rem;
+    right: 4rem;
+  }
+
+  .menu button span {
+    position: absolute;
+    border-top: 2px solid white;
+    width: 33px;
+  }
+
+  .menu button span::before,
+  .menu button span::after {
+    content: '';
+    display: block;
+    position: relative;
+    background-color: white;
+    height: 2px;
+    width: 33px;
+    margin-top: 6px;
+    transition: 0.8s;
+  }
+
+  .active ul {
+    visibility: visible;
+    display: flex;
+    position: fixed;
+    top: 5rem;
+    right: 2.2rem;
+  }
+
+  .active button span {
+    border-top-color: transparent;
+  }
+
+  .active button span::before {
+    transform: rotate(135deg);
+  }
+
+  .active button span::after {
+    transform: rotate(-135deg);
+    top: -8px;
+  }
+
+  .about-image,
+  .shedule-image,
+  .services-image {
+    display: none;
+  }
+}
