@@ -1,140 +1,153 @@
-@media screen and (max-width: 450px) {
-  body {
-    overflow-x: hidden;
-  }
+#btnMenuMobile {
+  display: none;
+}
 
-  header {
-    height: 15vh;
-    padding: 0;
-    overflow-x: hidden;
-  }
-
-  header.active-header {
-    height: 19.5vh;
-  }
-
-  header.active-header .imageLogo {
-    top: -21.5rem;
-    left: 0;
-    position: fixed;
-  }
-
-  header.headerTranslucentColor .imageLogo,
-  header.headerSolidColor .imageLogo {
-    top: -21.5rem;
-    left: 0;
-    position: fixed;
-  }
-
-  header.headerTranslucentColor .hover-border,
-  header.headerSolidColor .hover-border {
-    margin-bottom: -1rem;
-    font-size: 17px;
-    font-weight: 500;
-  }
-
-  /* header.headerSolidColor .imageLogo {
-    margin-top: 6rem;
-  } */
-
-  .imageLogo {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-
-  .rowFlex {
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-  }
-
-  .menu ul {
-    visibility: hidden;
-    display: flex;
-    padding: 0;
-    height: 50px;
-    position: absolute;
-  }
-
-  .hover-border {
-    margin: 0 -10px;
-    font-size: 17px;
-    font-weight: 500;
-  }
-
-  .menu button {
+@media screen and (max-width: 768px) {
+  #navHeader {
     display: block;
-    position: fixed;
-    top: 3rem;
-    right: 5rem;
-  }
-
-  .menu button span {
+    visibility: hidden;
+    background-color: rgb(239, 103, 245, 0.9);
     position: absolute;
-    border-top: 2px solid white;
-    width: 33px;
+    width: 40%;
+    height: 0;
+    top: 75px;
+    right: 0px;
+    overflow-y: hidden;
+    transition: 0.5s;
+    z-index: 1000;
   }
 
-  .menu button span::before,
-  .menu button span::after {
+  #navHeader a {
+    padding: 1.5rem 2rem;
+    justify-content: right;
+  }
+
+  #nav.active #navHeader {
+    visibility: visible;
+    overflow-y: auto;
+    height: calc(100vh - 70px);
+  }
+
+  #btnMenuMobile {
+    display: flex;
+    cursor: pointer;
+  }
+
+  #hamburgerIcon {
+    color: white;
+    border-top: 2px solid;
+    width: 30px;
+  }
+
+  #hamburgerIcon::after, #hamburgerIcon::before {
     content: '';
     display: block;
-    position: relative;
-    background-color: white;
+    background: currentColor;
+    width: 30px;
     height: 2px;
-    width: 33px;
-    margin-top: 6px;
-    transition: 0.8s;
-  }
-
-  .active ul {
-    visibility: visible;
-    display: flex;
-    position: fixed;
-    top: 5rem;
-    right: 2.2rem;
+    margin-top: 10px;
+    position: relative;
     transition: 0.3s;
   }
 
-  .active button span {
+  #nav.active #btnMenuMobile #hamburgerIcon {
     border-top-color: transparent;
   }
 
-  .active button span::before {
+  #nav.active #hamburgerIcon::before {
     transform: rotate(135deg);
   }
 
-  .active button span::after {
+  #nav.active #hamburgerIcon::after{
     transform: rotate(-135deg);
-    top: -8px;
+    top: -12px;
   }
 
-  .about-image,
-  .shedule-image,
-  .services-image {
-    display: none;
+  #diferenciais {
+    height: 975px;
   }
 
-  #diferenciais,
-  #services,
-  #contact {
-    height: 100%;
+  #diferenciaisContent ul li {
+    width: 48%;
   }
 
-  #diferenciaisContent ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+  #services {
+    height: 2050px;
   }
 
-  #diferenciaisContent ul li,
+  #servicesContent ul li {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #navHeader {
+    width: 80%;
+  }
+  
+  #about {
+    height: 750px;
+  }
+
+  #aboutContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #diferenciais {
+    height: 1775px;
+  }
+
+  #diferenciaisContent ul li {
+    width: 100%;
+  }
+
+  #services {
+    height: 3450px;
+  }
+
   #servicesContent ul li {
     width: 100%;
-    text-align: center;
   }
 
-  #servicesContent ul {
-    display: grid;
-    grid-template-columns: 1fr;
+  #contact {
+    height: 800px;
+  }
+
+  #contactContainer {
+    flex-direction: column;
+  }
+
+  #contactInfo,
+  #contactForm {
+    width: 100%;
+  }
+
+  #contactForm {
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #about {
+    height: 800px;
+  }
+
+  #contact {
+    height: 835px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #about {
+    height: 830px;    
+  }
+
+  #contact {
+    height: 890px;
+  }
+
+  #containerCopyright {
+    height: 75px;
   }
 }
