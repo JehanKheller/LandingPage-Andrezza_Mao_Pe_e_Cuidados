@@ -20,7 +20,7 @@ No production costs will be charged to the establishment.
 ![Captura de tela 2021-12-30 075417](https://user-images.githubusercontent.com/5993224/147749826-1ff77fe7-2701-4dcd-bae4-feec3d61f3c7.png)
 
 ## 🌐 Webpage
-To check the webpage, [click here!](https://jehankheller.github.io/HairSync/) 👈
+To check the webpage, [click here!](https://jehankheller.github.io/LandingPage-Andrezza_Mao_Pe_e_Cuidados/) 👈
 
 ## 📝 Technologies
 The technologies used for this project are:
