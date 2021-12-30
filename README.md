@@ -1,4 +1,5 @@
 # HairSync
+This is a Landing Page project to be donated to a commercial establishment.
 
 ## 💻 Project
 This is a landing page project to benefit the Andrezza - Mão Pé & Cuidados establishment.
