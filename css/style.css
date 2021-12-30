@@ -8,7 +8,8 @@
 }
 /* Reset ---------------------------------------------------------*/
 
-html, body {
+html,
+body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -24,7 +25,9 @@ body {
   background-size: cover;
 }
 
-#containerHeader, .rowFlex a, .rowGrid button {
+#containerHeader,
+.rowFlex a,
+.rowGrid button {
   color: white;
 }
 
@@ -35,7 +38,11 @@ body {
   -webkit-backdrop-filter: blur(10px);
 }
 
-header, h1, footer, #contact p, #contact button {
+header,
+h1,
+footer,
+#contact p,
+#contact button {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -53,7 +60,7 @@ header {
 }
 
 .headerTranslucentColor {
-  background-color: rgb(250,250,250, 0.4);
+  background-color: rgb(250, 250, 250, 0.4);
   transition: all 0.4s ease;
 }
 
@@ -62,7 +69,7 @@ header {
   transition: all 0.4s ease;
 }
 
-header a p{
+header a p {
   margin-left: 15px;
   font-size: 1.5rem;
 }
@@ -71,12 +78,16 @@ header p span {
   font-size: 0.9rem;
 }
 
-.rowFlex, .rowGrid {
+.rowFlex,
+.rowGrid {
   max-width: 1040px;
   margin: 0 auto;
 }
 
-.rowFlex, ul, a, .imageLogo {
+.rowFlex,
+ul,
+a,
+.imageLogo {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -92,12 +103,12 @@ header p span {
   gap: 2rem;
 }
 
-#navHeader li a{
+#navHeader li a {
   width: calc(100% + 22px);
   height: 40px;
 }
 
-#navHeader li a:hover {  
+#navHeader li a:hover {
   color: white;
   opacity: 0.8;
 }
@@ -129,7 +140,9 @@ header p span {
   height: calc(100% + 75px);
 }
 
-#rowGrid01 h1, #rowGrid01 p, #rowGrid01 button {
+#rowGrid01 h1,
+#rowGrid01 p,
+#rowGrid01 button {
   margin-bottom: 3rem;
 }
 
@@ -148,7 +161,8 @@ header p span {
   border-radius: 5px;
   border: 2px solid #f065fa;
   background-color: #f065fa;
-  box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .rowGrid {
@@ -181,7 +195,7 @@ main {
 
 /* Main > Session About -----------------------------------------*/
 #about {
-  height: 500px;
+  height: 100%;
   padding: 0 5%;
 }
 
@@ -218,16 +232,17 @@ main {
 
 /* Main > Session Diferenciais ----------------------------------*/
 #diferenciais {
-  background: url(../img/background_section_diferenciais.jpg) center center no-repeat fixed;
+  background: url(../img/background_section_diferenciais.jpg) center center
+    no-repeat fixed;
   background-size: cover;
   height: 700px;
   padding: 0 5%;
+  height: 100%;
 }
 
 #diferenciaisContainer {
   color: white;
   max-width: 1040px;
-  height: 100%;
   margin: 0 auto;
   padding: 2rem 0;
 }
@@ -239,17 +254,14 @@ main {
 #diferenciaisContent ul {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
 }
 
 #diferenciaisContent ul li {
-  background: rgb(0,0,0,0.2);
-  width: 31.5%;
+  background: rgb(0, 0, 0, 0.2);
+  width: 100%;
   height: 250px;
   padding: 1rem;
   border: 2px solid transparent;
@@ -275,8 +287,8 @@ main {
 #services {
   color: white;
   background-color: #fbeffc;
-  height: 1600px;
   padding: 0 5%;
+  height: 100%;
 }
 
 #services h2 {
@@ -298,16 +310,13 @@ main {
 #servicesContent ul {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
 }
 
 #servicesContent ul li {
-  width: 31.55%;
+  width: 100%;
   height: 450px;
   border: 2px solid #f065fa;
   border-radius: 5px;
@@ -337,7 +346,8 @@ main {
 
 #servicesContent ul li a:hover {
   border: 1px solid #f065fa;
-  box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }
 
@@ -403,19 +413,37 @@ main {
   margin: 0.2rem;
   border-radius: 5px;
   width: 4.8%;
-  box-shadow: 0 5px 7px 0 rgba(0,0,0,0.24);
+  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.24);
 }
 
 @keyframes animacao {
-  0% { margin-left: 0;}
-  20% {margin-left: 0; }
-  25% { margin-left: -100%;}
-  45% { margin-left: -100%;}
-  50% {margin-left: -200%;}
-  70% {margin-left: -200%;}
-  75% { margin-left: -300%}
-  95% {margin-left: -300%;}
-  100% {margin-left: -400%;}
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  95% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -400%;
+  }
 }
 /* Main > Session Gallery ---------------------------------------*/
 
@@ -423,16 +451,16 @@ main {
 #contact {
   background-color: #3f3d55;
   color: white;
-  height: 500px;
+  height: 100%;
   padding: 0 5%;
 }
 
-#contact h2 {
+#contact h3 {
   font-size: 2rem;
-  margin: 0 2rem 2rem 0;
+  margin: 0 2rem 1rem 0;
 }
 
-#contact h2 span {
+#contact h3 span {
   color: #f065fa;
 }
 
@@ -441,11 +469,12 @@ main {
   height: 100%;
   margin: 0 auto;
   padding: 2rem 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 #contactInfo {
-  width: 60%;
+  width: 90%;
 }
 
 #viewMap {
@@ -460,7 +489,7 @@ main {
 }
 
 #contactForm {
-  width: 40%;
+  width: 100%;
 }
 
 form {
@@ -469,7 +498,8 @@ form {
   border-radius: 5px;
 }
 
-form input, textarea {
+form input,
+textarea {
   margin-bottom: 1rem;
   padding: 0.7rem 0.5rem;
   background-color: #fbeffc;
@@ -488,7 +518,10 @@ form textarea {
   resize: vertical;
 }
 
-form input:hover, form input:focus, form textarea:hover, form textarea:focus {
+form input:hover,
+form input:focus,
+form textarea:hover,
+form textarea:focus {
   outline: none;
   border-color: #f065fa;
   box-shadow: 0 0 0 2px #f065fa;
@@ -505,11 +538,13 @@ form button {
   transition: all 500ms ease;
 }
 
-#viewMap:hover, form button:hover {
+#viewMap:hover,
+form button:hover {
   color: white;
   border: 1px solid #f065fa;
   background-color: #f065fa;
-  box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }
 /* Main > Session Contact ---------------------------------------*/
@@ -553,7 +588,7 @@ footer a p {
   gap: 0.5rem;
 }
 
-#footerSocial li a{
+#footerSocial li a {
   width: 40px;
   height: 40px;
   transition: all 500ms ease;

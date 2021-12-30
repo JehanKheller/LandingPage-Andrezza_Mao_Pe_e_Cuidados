@@ -2,6 +2,13 @@
   display: none;
 }
 
+@media only screen and (max-width: 880px) {
+  #servicesContent ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #navHeader {
     display: block;
@@ -39,13 +46,14 @@
     width: 30px;
   }
 
-  #hamburgerIcon::after, #hamburgerIcon::before {
+  #hamburgerIcon::after,
+  #hamburgerIcon::before {
     content: '';
     display: block;
     background: currentColor;
     width: 30px;
     height: 2px;
-    margin-top: 10px;
+    margin-top: 8px;
     position: relative;
     transition: 0.3s;
   }
@@ -58,35 +66,60 @@
     transform: rotate(135deg);
   }
 
-  #nav.active #hamburgerIcon::after{
+  #nav.active #hamburgerIcon::after {
     transform: rotate(-135deg);
-    top: -12px;
+    top: -10px;
+  }
+
+  .about-image {
+    display: none;
   }
 
   #diferenciais {
-    height: 975px;
+    height: 100%;
+  }
+
+  #diferenciaisContent ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   #diferenciaisContent ul li {
-    width: 48%;
+    width: 100%;
   }
 
   #services {
-    height: 2050px;
+    height: 100%;
   }
 
   #servicesContent ul li {
-    width: 48%;
+    width: 100%;
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 620px) {
+  #diferenciaisContent ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #servicesContent ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 490px) {
   #navHeader {
     width: 80%;
   }
-  
+
   #about {
-    height: 750px;
+    height: 100%;
+  }
+
+  .about-image {
+    display: none;
   }
 
   #aboutContent {
@@ -95,7 +128,12 @@
   }
 
   #diferenciais {
-    height: 1775px;
+    height: 100%;
+  }
+
+  #diferenciaisContent ul {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   #diferenciaisContent ul li {
@@ -103,7 +141,7 @@
   }
 
   #services {
-    height: 3450px;
+    height: 100%;
   }
 
   #servicesContent ul li {
@@ -111,10 +149,11 @@
   }
 
   #contact {
-    height: 800px;
+    height: 100%;
   }
 
   #contactContainer {
+    display: flex;
     flex-direction: column;
   }
 
@@ -126,30 +165,8 @@
   #contactForm {
     margin-top: 1.5rem;
   }
-}
-
-@media only screen and (max-width: 393px) {
-  #about {
-    height: 800px;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  #contact {
-    height: 835px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  #about {
-    height: 830px;    
-  }
-
-  #contact {
-    height: 890px;
-  }
 
   #containerCopyright {
-    height: 75px;
+    height: 100%;
   }
 }
