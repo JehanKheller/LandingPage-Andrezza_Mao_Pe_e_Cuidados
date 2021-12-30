@@ -1,7 +1,7 @@
 # HairSync
 
 ## 💻 Project
-This is a landing page project to benefit the Andrezza - Mão Pé & Care establishment.
+This is a landing page project to benefit the Andrezza - Mão Pé & Cuidados establishment.
 
 Its purpose is to help publicize the establishment's image and services and bring the public closer.
 
